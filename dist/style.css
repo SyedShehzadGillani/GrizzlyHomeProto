@@ -5064,6 +5064,13 @@ https://fiverr.com/codingeagle
     flex-direction: row;
     overflow-y: auto;
   }
+  .button_red {
+    font-size: 16px;
+  }
+  .font-size_54px {
+    font-size: 26px;
+    line-height: 150%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
