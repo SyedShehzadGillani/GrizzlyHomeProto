@@ -4178,5 +4178,68 @@
     <script type="module" src="./js/formValidation.js"></script>
     <script type="module" src="./../globalScripts.js"></script>
     <script type="module" src="./js/smoothScroll.js"></script>
+
+<script type="text/javascript">
+const cardWidth = 350; // Total width of a card (width + padding + margin)
+const intervalDuration = 2000; // Interval duration in milliseconds
+const intervalDurations = 2500; // Interval duration in milliseconds
+
+const testimonialFirst = document.getElementById('testimonial-first');
+const testnomialSecond = document.getElementById('testimonial-second');
+let currentCardIndex = 0; // Keep track of the current card index
+let minusVar = 8;
+
+let currentCardIndexs = 0; // Keep track of the current card index
+const totalNumberOfCards = document.querySelectorAll('#testimonial-first .testimonial-card').length; // Assuming you have a class 'card' for each card
+const totalNumberOfCardss = document.querySelectorAll('#testimonial-second .testimonial-card').length; // Assuming you have a class 'card' for each card
+
+
+testnomialSecond.setAttribute('dir','ltr');
+testnomialSecond.scrollTo(0,0);
+
+window.setInterval(function() {
+  // Check if we've reached the end and need to scroll back to the start
+  if (currentCardIndex >= totalNumberOfCards) {
+    currentCardIndex = 0; // Reset to the first card
+  }
+
+  // Calculate new scroll position based on the current card index
+  let newScrollPosition = cardWidth * currentCardIndex - (minusVar * currentCardIndex);
+  
+  testimonialFirst.scrollTo({
+    left: newScrollPosition,
+    behavior: 'smooth'
+  });
+
+  console.warn(newScrollPosition);
+
+  // Increment the card index for the next interval
+  currentCardIndex++;
+}, intervalDuration);
+
+window.setInterval(function() {
+  // Check if we've reached the end and need to scroll back to the start
+  if (currentCardIndexs >= totalNumberOfCardss) {
+    currentCardIndexs = 0; // Reset to the first card
+  }
+
+  // Calculate new scroll position based on the current card index
+  let newScrollPosition = cardWidth * currentCardIndex - (minusVar * currentCardIndex);
+  
+  testnomialSecond.scrollTo({
+    left: newScrollPosition,
+    behavior: 'smooth'
+  });
+
+  console.warn(newScrollPosition);
+
+  // Increment the card index for the next interval
+  currentCardIndexs++;
+}, intervalDurations);
+
+
+
+</script>
+    
   </body>
 </html>
