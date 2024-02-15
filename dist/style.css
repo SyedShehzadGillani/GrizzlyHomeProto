@@ -5039,7 +5039,7 @@ https://fiverr.com/codingeagle
     font-size: 16px;
   }
   .homeheader .header-title {
-    font-size: 20px;
+    font-size: 30px;
   }
   .homeheader .header-text {
     font-size: 16px;
@@ -5065,11 +5065,14 @@ https://fiverr.com/codingeagle
     overflow-y: auto;
   }
   .button_red {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .font-size_54px {
     font-size: 26px;
     line-height: 150%;
+  }
+  .homeparents {
+    padding-bottom: 0px !important;
   }
 }
 
