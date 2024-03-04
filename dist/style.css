@@ -5018,18 +5018,41 @@ input {
 /** Modified by codingeagle
 https://fiverr.com/codingeagle
 **/
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+#testimonial-first, #testimonial-second {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto !important;
+  padding-bottom: 20px;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+#testimonial-first::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+#testimonial-second::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+@media only screen and (min-width: 856px) {
+  .testimonial-card {
+    min-height: 235px;
+    max-height: 235px;
+    min-width: 25% !important;
+    overflow-y: auto;
+  }
+  #testimonial-second {
+    margin-bottom: 150px !important;
+  }
+}
 @media only screen and (max-width: 856px) {
-  body {
-    max-width: 100vw;
-    overflow-x: hidden;
-  }
-  #testimonial-first, #testimonial-second {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto !important;
-    padding-bottom: 20px;
-  }
-  #testimonial-first .testimonial-card, #testimonial-second .testimonial-card {
+  .testimonial-card {
     min-height: 235px;
     max-height: 235px;
     min-width: 100% !important;
@@ -5060,9 +5083,15 @@ https://fiverr.com/codingeagle
     font-size: 24px;
   }
   .schools {
-    flex-wrap: nowrap !important;
+    flex-wrap: wrap !important;
     flex-direction: row;
-    overflow-y: auto;
+    overflow: hidden;
+  }
+  .schools .school {
+    max-width: 100px;
+  }
+  .schools img {
+    width: 100%;
   }
   .button_red {
     font-size: 16px !important;

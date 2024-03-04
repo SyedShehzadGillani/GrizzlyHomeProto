@@ -10,7 +10,7 @@
 https://fiverr.com/codingeagle
 **/
 
-@media only screen and (max-width:856px){
+
 
 body{
     max-width:100vw;
@@ -22,14 +22,39 @@ body{
     overflow-x: auto !important;
     padding-bottom:20px;
     
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+#testimonial-first::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+#testimonial-second::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+@media only screen and (min-width:856px){
+    .testimonial-card{
+        min-height:235px;
+        max-height:235px;
+        min-width:25% !important;
+        overflow-y: auto;
+    }
+    #testimonial-second{
+        margin-bottom:150px !important;
+    }
+}
+
+@media only screen and (max-width:856px){
+
     .testimonial-card{
         min-height:235px;
         max-height:235px;
         min-width:100% !important;
         overflow-y: auto;
     }
-}
-
 h1{
     font-size:16px;
 }
@@ -65,9 +90,16 @@ h1{
 }
 
 .schools{
-    flex-wrap: nowrap !important;
+    flex-wrap: wrap !important;
     flex-direction: row;
-    overflow-y:auto;
+    // overflow-y:auto;
+    overflow:hidden;
+}
+.schools .school{
+    max-width:100px;
+}
+.schools img{
+  width:100%;
 }
 
 .button_red{
