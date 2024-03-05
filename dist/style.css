@@ -5062,7 +5062,7 @@ body {
     font-size: 16px;
   }
   .homeheader .header-title {
-    font-size: 30px;
+    font-size: 8vw;
   }
   .homeheader .header-text {
     font-size: 16px;
@@ -5080,7 +5080,7 @@ body {
     font-size: 20px;
   }
   .homeparents-second .homeparents-title {
-    font-size: 24px;
+    font-size: 6vw;
   }
   .schools {
     flex-wrap: wrap !important;
@@ -5102,6 +5102,52 @@ body {
   }
   .homeparents {
     padding-bottom: 0px !important;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .homeheader {
+    min-height: 780px;
+  }
+}
+@media only screen and (min-width: 575px) {
+  .homeheader {
+    min-height: 900px;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .homeheader {
+    min-height: 1100px;
+  }
+}
+@media only screen and (min-width: 620px) {
+  .homesub-footer {
+    padding-top: 0px;
+  }
+  .homeparents-second {
+    padding-top: 70px;
+  }
+  .intro-video-container {
+    height: 30vh !important;
+  }
+  .homereview .schools {
+    padding-bottom: 0px;
+  }
+  .homereview .header-container {
+    padding-top: 100px;
+  }
+  .homeintro .homeintro-container {
+    padding: 100px 100px;
+  }
+  .homecta {
+    padding-top: 150px;
+  }
+}
+@media only screen and (min-width: 481px) {
+  #testimonial-second {
+    margin-bottom: 100px !important;
+  }
+  .testimonial-card {
+    min-width: 350px !important;
   }
 }
 

@@ -45,6 +45,7 @@ body{
     #testimonial-second{
         margin-bottom:150px !important;
     }
+  
 }
 
 @media only screen and (max-width:856px){
@@ -61,7 +62,7 @@ h1{
 .homeheader{
   
     .header-title{
-    font-size:30px;
+    font-size:8vw;
     }
     .header-text{
         font-size:16px;
@@ -85,7 +86,7 @@ h1{
         font-size:20px;
     }
     .homeparents-title{
-        font-size:24px;
+        font-size:6vw;
     }
 }
 
@@ -112,4 +113,56 @@ h1{
 .homeparents{
     padding-bottom: 0px !important;
 }
+}
+
+@media only screen and (min-width:480px){
+    .homeheader{
+        min-height:780px;
+    }
+}
+
+@media only screen and (min-width:575px){
+    .homeheader{
+        min-height:900px;
+    }
+}
+@media only screen and (min-width:850px){
+    .homeheader{
+        min-height:1100px;
+    }
+}
+
+@media only screen and (min-width:620px){
+    .homesub-footer{
+        padding-top:0px;
+    }
+    .homeparents-second{
+        padding-top:70px;
+    }
+    .intro-video-container{
+        height:30vh !important;
+    }
+
+    .homereview .schools{
+        padding-bottom:0px;
+    }
+
+    .homereview .header-container{
+        padding-top:100px;
+    }
+    .homeintro .homeintro-container{
+        padding:100px 100px;
+    }
+    .homecta{
+        padding-top:150px;
+    }
+}
+
+@media only screen and (min-width:481px){
+    #testimonial-second{
+        margin-bottom:100px !important;
+    }
+    .testimonial-card{
+        min-width:350px !important;
+    }
 }
