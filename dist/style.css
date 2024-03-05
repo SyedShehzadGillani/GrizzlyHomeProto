@@ -5019,12 +5019,8 @@ input {
 https://fiverr.com/codingeagle
 **/
 body {
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: hidden !important;
-}
-
-main {
-  overflow-x: hidden;
 }
 
 #testimonial-first, #testimonial-second {
@@ -5056,6 +5052,9 @@ main {
   }
 }
 @media only screen and (max-width: 856px) {
+  main {
+    overflow-x: hidden;
+  }
   .homereview .header-container .red-arrow-icon {
     top: 81%;
   }
