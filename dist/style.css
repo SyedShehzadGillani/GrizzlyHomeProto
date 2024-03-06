@@ -5052,6 +5052,16 @@ body {
   }
 }
 @media only screen and (max-width: 856px) {
+  .d-none-on-pc {
+    display: block !important;
+  }
+  main {
+    overflow-x: hidden !important;
+    position: relative !important;
+  }
+  .homereview .wistia_responsive_padding.intro-video {
+    z-index: 10000;
+  }
   .homereview .header-container .red-arrow-icon {
     top: 81%;
   }
@@ -5109,12 +5119,15 @@ body {
 }
 @media only screen and (min-width: 480px) {
   .homeheader {
-    min-height: 780px;
+    min-height: 450px;
   }
 }
 @media only screen and (min-width: 575px) {
   .homeheader {
-    min-height: 900px;
+    min-height: 500px;
+  }
+  .d-none-on-pc {
+    min-height: 45vh !important;
   }
 }
 @media only screen and (min-width: 850px) {
@@ -5152,6 +5165,14 @@ body {
   .testimonial-card {
     min-width: 350px !important;
   }
+}
+#grizzlySubscription button {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.d-none-on-pc {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
